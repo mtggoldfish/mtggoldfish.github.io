@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лоби</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div style="left: 2%;top: 2%;width: 68%;height: 78%;">
+    <textarea placeholder="Колода"></textarea>
+</div>
+<div style="left: 72%;top: 2%;width: 26%;height: 78%;">
+    <textarea disabled="disabled" id="chat"></textarea>
+</div>
+<div style="left: 72%; top: 82%; width: 26%;height: 7%;">
+    <textarea placeholder="Сообщение" id="message"></textarea>
+</div>
+<div style="left: 72%; top: 91%; width: 26%;height: 7%;">
+    <button onclick="send()">Отправвить</button>
+</div>
+<div style="left: 2%;top: 82%;width: 68%;height: 7%;">
+    <textarea placeholder="Лоби"></textarea>
+</div>
+<div style="left: 2%;top: 91%;width: 68%;height: 7%;">
+    <button>Зайити в лоби</button>
+</div>
+<div class="login" id = "login-frame">
+    <textarea class="login-area" placeholder="Логин" id = "login-form"></textarea>
+    <textarea class="password-area" placeholder="Пароль" id = "password-form"></textarea>
+    <button class="submit-button" onclick="submit()">Отправить</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
