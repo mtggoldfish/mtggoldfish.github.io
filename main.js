@@ -37,7 +37,7 @@ function check() {
     var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
     var xhr = new XHR();
-    xhr.open('GET', 'http://192.168.0.131:8080/message/read/' + name, true);
+    xhr.open('GET', '//192.168.0.131:8080/message/read/' + name, true);
 
     xhr.onload = function () {
         if (this.responseText != "null") {
