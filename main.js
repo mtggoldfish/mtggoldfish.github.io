@@ -21,7 +21,7 @@ function send() {
 
     var xhr = new XHR();
 
-    xhr.open('GET', 'http://192.168.0.131:8080/message/send/_ALL_/' + mes, true);
+    xhr.open('GET', 'http://172.21.141.50:8080/message/send/_ALL_/' + mes, true);
 
     xhr.onload = function () {
     };
@@ -37,7 +37,7 @@ function check() {
     var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
     var xhr = new XHR();
-    xhr.open('GET', 'http://192.168.0.131:8080/message/read/' + name, true);
+    xhr.open('GET', 'http://172.21.141.50:8080/message/read/' + name, true);
 
     xhr.onload = function () {
         if (this.responseText != "null") {
@@ -67,7 +67,7 @@ function submit() {
     var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
     var xhr = new XHR();
-    xhr.open('GET', 'http://192.168.0.131:8080/check/' + login + '/' + password, true);
+    xhr.open('GET', 'http://172.21.141.50:8080/check/' + login + '/' + password, true);
 
     xhr.onload = function () {
         if (this.responseText == "ok") {
